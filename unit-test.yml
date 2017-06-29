@@ -13,4 +13,5 @@ run:
   - -exc
   - |
     cd concourse-test02/src/app
+    npm install -g @angular/cli
     npm test

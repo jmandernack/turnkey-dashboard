@@ -1,8 +1,8 @@
 resources:
-- name: dashboard-main
+- name: concourse-test02
   type: git
   source:
-    uri: https://github.com/jmandernack/concourse-test02.git
+    uri: https://github.com/jmandernack/concourse-test02
 
 #- name: staging-dashboard
 #  type: cf
@@ -16,10 +16,12 @@ resources:
 jobs:
 - name: turnkey-dashboard-unit
   plan:
-  - get: dashboard-main
+  - get: concourse-test02
     trigger: true
   - task: unit-test
     file: concourse-test02/unit-test.yml
 #  - put: staging-dashboard
 #    params:
 #      manifest: manifest.yml
+
+# https://github.com/jmandernack/concourse-test02.git
