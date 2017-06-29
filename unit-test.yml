@@ -3,8 +3,10 @@ platform: linux
 image_resource:
   type: docker-image
   source:
-    repository: node
-    tag: '6'
+    repository: trion/ng-cli-karma
+    email: jacob_mandernack@ultimatesoftware.com
+    username: jmandernack
+    password: dockerporthub
 inputs:
 - name: turnkey-dashboard
 run:
@@ -13,5 +15,4 @@ run:
   - -exc
   - |
     cd turnkey-dashboard/src/app
-    npm -v
-    ng -v
+    npm test
