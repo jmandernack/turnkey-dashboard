@@ -6,12 +6,11 @@ image_resource:
     repository: node
     tag: '6'
 inputs:
-- name: concourse-test02
+- name: turnkey-dashboard
 run:
   path: sh
   args:
   - -exc
   - |
-    cd concourse-test02/src/app
-    npm install -g @angular/cli
+    cd turnkey-dashboard/src/app
     npm test
