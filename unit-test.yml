@@ -12,6 +12,6 @@ run:
   args:
   - -exc
   - |
-#    cd turnkey-dashboard/src/app
+    cd turnkey-dashboard/src/app
     npm -v
     ng -v
