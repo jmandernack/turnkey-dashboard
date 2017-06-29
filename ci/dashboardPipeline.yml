@@ -19,7 +19,7 @@ jobs:
   - get: dashboard-main
     trigger: true
   - task: unit-test
-    file: turnkey-dashboard/unit-test.yml
+    file: concourse-test02/unit-test.yml
 #  - put: staging-dashboard
 #    params:
 #      manifest: manifest.yml
