@@ -6,11 +6,11 @@ image_resource:
     repository: node
     tag: '6'
 inputs:
-- name: turnkey-dashboard
+- name: concourse-test02
 run:
   path: sh
   args:
   - -exc
   - |
-    cd turnkey-dashboard/src/app
+    cd concourse-test02/src/app
     npm test
