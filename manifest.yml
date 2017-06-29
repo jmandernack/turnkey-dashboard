@@ -1,0 +1,4 @@
+name: dashboard-test
+memory: 128M
+random-route: true
+path: .

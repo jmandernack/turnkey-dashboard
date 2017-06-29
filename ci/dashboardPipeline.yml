@@ -1,0 +1,25 @@
+resources:
+- name: dashboard-main
+  type: git
+  source:
+    uri: https://github.com/jmandernack/concourse-test02.git
+
+#- name: staging-dashboard
+#  type: cf
+#  source:
+#      api: https://api.local.pcfdev.io
+#      username: admin
+#      password: admin
+#      organization: pcfdev-org
+#      space: pcfdev-space
+
+jobs:
+- name: turnkey-dashboard-unit
+  plan:
+  - get: dashboard-main
+    trigger: true
+  - task: unit-test
+    file: turnkey-dashboard/unit-test.yml
+#  - put: staging-dashboard
+#    params:
+#      manifest: manifest.yml
