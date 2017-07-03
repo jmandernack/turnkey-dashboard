@@ -12,5 +12,6 @@ run:
   args:
   - -exc
   - |
-    cd turnkey-dashboard/src/app
+    cd turnkey-dashboard/
+    npm install
     npm test
