@@ -4,7 +4,7 @@ image_resource:
   type: docker-image
   source:
     repository: jmandernack/discreet-squirrel
-    tag: '01'
+    tag: '03'
 inputs:
 - name: turnkey-dashboard
 run:
