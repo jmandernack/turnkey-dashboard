@@ -13,5 +13,4 @@ run:
   - -exc
   - |
     cd turnkey-dashboard/
-    npm install
     npm test
