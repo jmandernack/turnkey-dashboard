@@ -12,8 +12,6 @@ run:
   args:
   - -exc
   - |
-    export CHROME_BIN=/usr/bin/chromium-browser
-    chmod +x /usr/bin/chromium-browser
     cd turnkey-dashboard/
     npm install
     npm test
